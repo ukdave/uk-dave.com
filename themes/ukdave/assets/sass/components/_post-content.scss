@@ -1,0 +1,12 @@
+.post-content {
+  h1 { font-size: $h2-font-size }
+  h2 { font-size: $h3-font-size }
+  h3 { font-size: $h4-font-size }
+  h4 { font-size: $h5-font-size }
+  h5 { font-size: $h6-font-size }
+  h6 { font-size: $h6-font-size * .75; }
+
+  h1:not(:first-child) { margin-top: 3rem; }
+  h2 { margin-top: 2rem;  }
+  h3 { margin-top: 1.5rem; }
+}

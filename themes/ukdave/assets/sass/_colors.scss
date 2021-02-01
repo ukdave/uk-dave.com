@@ -1,0 +1,34 @@
+// Our color palette
+
+$white:     #fff;
+$gray-100:  #f4f4f5; // tailwind gray-100
+$gray-200:  #e4e4e7; // tailwind gray-200
+$gray-300:  #d4d4d8; // tailwind gray-300
+$gray-400:  #a1a1aa; // tailwind gray-400
+$gray-450:  darken($gray-400, 12%);
+$gray-500:  #71717a; // tailwind gray-500
+$gray-600:  #52525b; // tailwind gray-600
+$gray-700:  #3f3f46; // tailwind gray-700
+$gray-800:  #27272a; // tailwind gray-800
+$gray-900:  #18181b; // tailwind gray-900
+$black:     #000;
+
+$blue:      #3f80ea; // custom
+$indigo:    #818cf8; // tailwind indigo-400
+$purple:    #c084fc; // tailwind purple-400
+$pink:      #f472b6; // tailwind pink-400
+$red:       #ed5b54; // custom
+$orange:    #fb923c; // tailwind orange-400
+$yellow:    #ffb93d; // custom
+$green:     #4bbf73; // custom
+$teal:      #14b8a6; // tailwind teal-500
+$cyan:      #29a9df; // custom
+
+$primary:   $blue;
+$secondary: $gray-450;
+$success:   $green;
+$info:      $cyan;
+$warning:   $yellow;
+$danger:    $red;
+$light:     $gray-400;
+$dark:      $gray-700;

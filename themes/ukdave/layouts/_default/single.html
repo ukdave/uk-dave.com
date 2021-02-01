@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <header>
+    <h1>{{ .Title }}</h1>
+    <p class="text-muted"><small>{{ .Date.Format "January 2, 2006" }} &nbsp;&#x2022;&nbsp; {{ .ReadingTime }} min read</small></p>
+  </header>
+  <article class="post-content">
+    {{ .Content }}
+  </article>
+{{ end }}

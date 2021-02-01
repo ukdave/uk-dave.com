@@ -1,0 +1,21 @@
+{
+ "comments": {
+  "dependencies": {},
+  "devDependencies": {
+   "@fullhuman/postcss-purgecss": "theme-ukdave",
+   "autoprefixer": "theme-ukdave",
+   "bootstrap": "theme-ukdave",
+   "postcss": "theme-ukdave",
+   "postcss-cli": "theme-ukdave"
+  }
+ },
+ "devDependencies": {
+  "@fullhuman/postcss-purgecss": "^4.0.2",
+  "autoprefixer": "^10.2.4",
+  "bootstrap": "^4.6.0",
+  "postcss": "^8.2.6",
+  "postcss-cli": "^8.3.1"
+ },
+ "name": "uk-dave.com",
+ "version": "0.1.0"
+}

@@ -1,3 +1,18 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://uk-dave.com/"
+languageCode = "en-gb"
+title = "David Bull"
+theme = "ukdave"
+
+[build]
+  writeStats = true
+
+[[menu.main]]
+  name = "Blog"
+  weight = 100
+  identifier = "blog"
+  url = "/blog/"
+[[menu.main]]
+  name = "Projects"
+  weight = 200
+  identifier = "projects"
+  url = "/projects/"

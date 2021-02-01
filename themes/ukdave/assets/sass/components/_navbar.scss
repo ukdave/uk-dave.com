@@ -1,0 +1,26 @@
+.navbar {
+  background-color: $body-bg;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+main.container {
+  margin-top: 1.5rem;
+}
+
+@include media-breakpoint-up("sm") {
+  .fixed-top-sm {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: $zindex-fixed;
+  }
+
+  main.container {
+    margin-top: 5rem;
+  }
+}
