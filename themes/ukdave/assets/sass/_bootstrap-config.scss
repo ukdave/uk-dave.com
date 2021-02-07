@@ -8,3 +8,44 @@ $font-family-sans-serif:            "Raleway", sans-serif;
 $headings-font-family:              "Indie Flower", "Raleway", sans-serif;
 
 $text-muted:                        $gray-500;
+
+$code-color:                        $indigo;
+$pre-color:                         $gray-400;
+
+$table-bg-level:                    -3;
+$table-border-level:                0;
+
+$pagination-color:                  $gray-400;
+$pagination-bg:                     $gray-700;
+$pagination-border-color:           $gray-600;
+
+$pagination-hover-color:            $gray-200;
+$pagination-hover-bg:               $gray-600;
+$pagination-hover-border-color:     $gray-600;
+
+$pagination-disabled-color:         $gray-600;
+$pagination-disabled-bg:            $gray-700;
+$pagination-disabled-border-color:  $gray-600;
+
+$jumbotron-bg:                      $gray-700;
+
+$card-bg:                           $gray-700;
+
+$alert-bg-level:                    0;
+$alert-border-level:                0;
+$alert-color-level:                 -10;
+
+$progress-bg:                       $gray-700;
+
+$list-group-bg:                     $gray-700;
+$list-group-hover-bg:               $gray-600;
+$list-group-disabled-color:         $gray-600;
+$list-group-action-color:           $gray-300;
+
+$breadcrumb-bg:                     $gray-700;
+$breadcrumb-divider-color:          $gray-500;
+$breadcrumb-active-color:           $gray-400;
+
+$embed-responsive-aspect-ratios: (
+  (3 2),
+);

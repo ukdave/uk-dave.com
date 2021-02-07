@@ -3,6 +3,14 @@ languageCode = "en-gb"
 title = "David Bull"
 theme = "ukdave"
 
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  noClasses = false
+
 [build]
   writeStats = true
 
