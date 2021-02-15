@@ -1,0 +1,14 @@
+.anim-fade-in-slide-down {
+  animation: anim-fade-in-slide-down 2s;
+}
+
+@keyframes anim-fade-in-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

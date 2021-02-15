@@ -4,6 +4,10 @@
 @import "bootstrap-custom";
 @import "config";
 
+@import "./components/animations";
+@import "./components/font-awesome";
 @import "./components/navbar";
 @import "./components/post-content";
 @import "./components/syntax-monokai";
+
+@import "./pages/home";

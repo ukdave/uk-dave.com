@@ -14,6 +14,19 @@ theme = "ukdave"
 [build]
   writeStats = true
 
+[params]
+  author = "David Bull"
+  logo = "weemee-head-only_200x200.png"
+  strapline = "Software Developer, Amateur Photographer, Geek"
+
+[params.social]
+  GitHub        = "ukdave"
+  Email         = "david@uk-dave.com"
+  Twitter       = "ukdave"
+  LinkedIn      = "david-bull-51810016"
+  # StackOverflow = "username"
+  Flickr        = "uk_dave"
+
 [[menu.main]]
   name = "Blog"
   weight = 100

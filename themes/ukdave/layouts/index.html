@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+  {{ partial "site-head.html" . }}
+  <body class="page-home">
+    <div class="d-flex flex-column align-items-center justify-content-center text-center vh-100">
+      <div class="anim-fade-in-slide-down">
+        <img class="drop-shadow mb-2" src="{{ .Site.BaseURL }}img/{{ .Site.Params.logo }}" alt="Logo" width="100" height="100" />
+        <h1>{{ .Site.Params.Author }}</h1>
+        <h2 class="h5 text-sans-serif text-muted">{{ .Site.Params.strapline }}</h2>
+
+        <nav class="nav justify-content-center social-links my-4">
+          {{ if .Site.Params.Social.GitHub }}<a class="nav-link social-link" href="https://github.com/{{ .Site.Params.Social.GitHub }}">{{ partial "svg/fa-github.svg" . }}</a>{{ end }}
+          {{ if .Site.Params.Social.Email }}<a class="nav-link social-link" href="mailto:{{ .Site.Params.Social.Email }}">{{ partial "svg/fa-envelope.svg" . }}</a>{{ end }}
+          {{ if .Site.Params.Social.Twitter }}<a class="nav-link social-link" href="https://twitter.com/{{ .Site.Params.Social.Twitter }}">{{ partial "svg/fa-twitter.svg" . }}</a>{{ end }}
+          {{ if .Site.Params.Social.LinkedIn }}<a class="nav-link social-link" href="http://linkedin.com/in/{{ .Site.Params.Social.LinkedIn }}">{{ partial "svg/fa-linkedin.svg" . }}</a>{{ end }}
+          {{ if .Site.Params.Social.StackOverflow }}<a class="nav-link social-link" href="http://stackoverflow.com/users/{{ .Site.Params.Social.StackOverflow }}">{{ partial "svg/fa-stack-overflow.svg" . }}</a>{{ end }}
+          {{ if .Site.Params.Social.Flickr }}<a class="nav-link social-link" href="https://www.flickr.com/photos/{{ .Site.Params.Social.Flickr }}">{{ partial "svg/fa-flickr.svg" . }}</a>{{ end }}
+        </nav>
+      </div>
+
+      <nav class="nav justify-content-center mt-n2">
+        {{ if .Site.Menus.main }}
+          {{ range sort .Site.Menus.main }}
+            <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
+        {{ end }}
+      </nav>
+    </div>
+  </body>
+</html>
