@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <article>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+      {{ range .Params.photos }}
+        <div class="col mb-4">
+          <div class="embed-responsive embed-responsive-3by2">
+            <a class="embed-responsive-item" data-flickr-embed="true" href="{{ .link }}" title="{{ .title }}" data-branding="false" data-sharing="false">
+              <img class="gallery-item anim-fade-in-scale-up" loading="lazy" src="{{ .src }}" alt="{{ .title }}">
+            </a>
+          </div>
+        </div>
+      {{ else }}
+        <div class="col"><p>Sorry, there's nothing to see here yet.</p></div>
+      {{ end }}
+    </div>
+    <!-- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> -->
+  </article>
+{{ end }}

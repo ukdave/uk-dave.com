@@ -37,3 +37,8 @@ theme = "ukdave"
   weight = 200
   identifier = "projects"
   url = "/projects/"
+[[menu.main]]
+  name = "Photography"
+  weight = 300
+  identifier = "photography"
+  url = "/photography/"
