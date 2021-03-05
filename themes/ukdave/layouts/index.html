@@ -4,7 +4,7 @@
   <body class="page-home">
     <div class="d-flex flex-column align-items-center justify-content-center text-center vh-100">
       <div class="anim-fade-in-slide-down">
-        <img class="drop-shadow mb-2" src="{{ .Site.BaseURL }}img/{{ .Site.Params.logo }}" alt="Logo" width="100" height="100" />
+        <img class="drop-shadow mb-2" src="{{ .Site.Params.logo | relURL }}" alt="Logo" width="100" height="100" />
         <h1>{{ .Site.Params.Author }}</h1>
         <h2 class="h5 text-sans-serif text-muted">{{ .Site.Params.strapline }}</h2>
 

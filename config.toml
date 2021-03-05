@@ -16,7 +16,8 @@ theme = "ukdave"
 
 [params]
   author = "David Bull"
-  logo = "weemee-head-only_200x200.png"
+  favicon = "/img/favicon.ico"
+  logo = "/img/weemee-head-only_200x200.png"
   strapline = "Software Developer, Amateur Photographer, Geek"
 
 [params.social]

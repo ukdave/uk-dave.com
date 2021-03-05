@@ -3,11 +3,11 @@
   {{ partial "site-head.html" . }}
   <body>
     <header class="navbar navbar-expand navbar-dark flex-column flex-sm-row align-items-center fixed-top-sm">
-      <a href="{{ .Site.BaseURL }}" class="navbar-brand mr-sm-auto">
+      <a href="{{ "/" | relURL }}" class="navbar-brand mr-sm-auto">
         {{ .Site.Title }}
       </a>
       <nav class="navbar-nav">
-        <a class="nav-link" href="{{ .Site.BaseURL }}">Home</a>
+        <a class="nav-link" href="{{ "/" | relURL }}">Home</a>
         {{ if .Site.Menus.main }}
           {{ range sort .Site.Menus.main }}
             <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
