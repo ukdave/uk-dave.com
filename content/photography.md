@@ -1,5 +1,6 @@
 ---
 title: Photography
+description: Photography
 layout: gallery
 
 photos:

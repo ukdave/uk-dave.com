@@ -19,6 +19,7 @@ theme = "ukdave"
   favicon = "/img/favicon.ico"
   logo = "/img/weemee-head-only_200x200.png"
   strapline = "Software Developer, Amateur Photographer, Geek"
+  description = "My personal website"
 
 [params.social]
   GitHub        = "ukdave"
