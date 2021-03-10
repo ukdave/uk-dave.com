@@ -7,6 +7,9 @@
 
   <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
 
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap" rel="stylesheet" />
+
   {{ $css_options := dict "targetPath" "css/main.css" "includePaths" (slice "./" "node_modules") }}
   {{ if hugo.IsProduction  }}
     {{ $css_options = merge $css_options (dict "outputStyle" "compressed") }}
