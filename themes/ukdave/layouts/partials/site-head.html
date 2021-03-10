@@ -7,8 +7,12 @@
 
   <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap" rel="stylesheet" />
+  <!-- https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
+  {{ $gfont := "https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap" }}
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="{{ $gfont }}" />
+  <link rel="stylesheet" href="{{ $gfont }}" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="{{ $gfont }}" /></noscript>
 
   {{ $css_options := dict "targetPath" "css/main.css" "includePaths" (slice "./" "node_modules") }}
   {{ if hugo.IsProduction  }}
