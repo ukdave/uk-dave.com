@@ -3,15 +3,17 @@
     <h1>{{ .Title }}</h1>
   </header>
   <article>
-    <ul class="list-unstyled">
-      {{ range .Data.Pages.ByPublishDate.Reverse }}
-        <li>
-          <h6 style="font-family: inherit;"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h6>
-          <p class="text-muted small">{{ .Date.Format "January 2, 2006" }} &nbsp;&#x2022;&nbsp; {{ .ReadingTime }} min read</p>
-        </li>
-      {{ else }}
-        <p>Sorry, there's nothing to see here yet.</p>
-      {{ end }}
-    </ul>
+    {{ with .Data.Pages.ByPublishDate.Reverse }}
+      <ul class="list-unstyled">
+        {{ range . }}
+          <li>
+            <h6 style="font-family: inherit;"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h6>
+            <p class="text-muted small">{{ .Date.Format "January 2, 2006" }} &nbsp;&#x2022;&nbsp; {{ .ReadingTime }} min read</p>
+          </li>
+        {{ end }}
+      </ul>
+    {{ else }}
+      <p>Sorry, there's nothing to see here yet.</p>
+    {{ end }}
   </article>
 {{ end }}
