@@ -2,6 +2,12 @@
   animation: anim-fade-in-slide-down 2s;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-in-slide-down {
+    animation: none;
+  }
+}
+
 @keyframes anim-fade-in-slide-down {
   from {
     opacity: 0;
@@ -15,6 +21,12 @@
 
 .anim-fade-in-scale-up {
   animation: anim-fade-in-scale-up 0.8s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-in-scale-up {
+    animation: none;
+  }
 }
 
 @keyframes anim-fade-in-scale-up {
