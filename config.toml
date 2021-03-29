@@ -3,6 +3,8 @@ languageCode = "en-gb"
 title = "David Bull"
 theme = "ukdave"
 
+googleAnalytics = "G-N7WYC3EZLL"
+
 [markup.goldmark.renderer]
   unsafe = true
 

@@ -25,4 +25,8 @@
   <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ .Site.Params.favicon | relURL }}" />
+
+  {{ if hugo.IsProduction  }}
+    {{ template "_internal/google_analytics.html" . }}
+  {{ end }}
 </head>
