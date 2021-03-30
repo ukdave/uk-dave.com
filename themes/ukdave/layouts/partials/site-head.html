@@ -5,32 +5,32 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
   {{ hugo.Generator }}
 
-  {{ if .IsHome }}
+  {{ if .IsHome -}}
     <title>{{ .Title }}</title>
-  {{ else }}
+  {{ else -}}
     <title>{{ .Site.Title }}{{ with .Title }} | {{ . }}{{ end }}</title>
-  {{ end }}
+  {{ end -}}
 
   <!-- https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
-  {{ $gfont := "https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap" }}
+  {{ $gfont := "https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap" -}}
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="{{ $gfont }}" />
   <link rel="stylesheet" href="{{ $gfont }}" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="{{ $gfont }}" /></noscript>
 
-  {{ $css_options := dict "targetPath" "css/main.css" "includePaths" (slice "./" "node_modules") }}
-  {{ if hugo.IsProduction  }}
-    {{ $css_options = merge $css_options (dict "outputStyle" "compressed") }}
-  {{ end }}
-  {{ $style := resources.Get "sass/main.scss" | toCSS $css_options }}
-  {{ if hugo.IsProduction  }}
-    {{ $style = $style | postCSS | fingerprint | resources.PostProcess }}
-  {{ end }}
+  {{ $css_options := dict "targetPath" "css/main.css" "includePaths" (slice "./" "node_modules") -}}
+  {{ if hugo.IsProduction -}}
+    {{ $css_options = merge $css_options (dict "outputStyle" "compressed") -}}
+  {{ end -}}
+  {{ $style := resources.Get "sass/main.scss" | toCSS $css_options -}}
+  {{ if hugo.IsProduction -}}
+    {{ $style = $style | postCSS | fingerprint | resources.PostProcess -}}
+  {{ end -}}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ .Site.Params.favicon | relURL }}" />
 
-  {{ if hugo.IsProduction  }}
-    {{ template "_internal/google_analytics.html" . }}
-  {{ end }}
+  {{ if hugo.IsProduction -}}
+    {{ template "_internal/google_analytics.html" . -}}
+  {{ end -}}
 </head>
