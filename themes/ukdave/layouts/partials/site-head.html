@@ -5,7 +5,11 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
   {{ hugo.Generator }}
 
-  <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+  {{ if .IsHome }}
+    <title>{{ .Title }}</title>
+  {{ else }}
+    <title>{{ .Site.Title }}{{ with .Title }} | {{ . }}{{ end }}</title>
+  {{ end }}
 
   <!-- https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
   {{ $gfont := "https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap" }}
