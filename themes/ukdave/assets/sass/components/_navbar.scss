@@ -1,6 +1,11 @@
 .navbar {
   background-color: $body-bg;
   border-bottom: 1px solid rgba(255,255,255,.1);
+
+  .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .navbar-brand {

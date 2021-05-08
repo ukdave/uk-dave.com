@@ -1,4 +1,8 @@
 .page-home {
+  // Fix heading font sizes here to override RFS
+  h1 { font-size: $h1-font-size; }
+  h2 { font-size: $h5-font-size; }
+
   .drop-shadow {
     filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
   }
