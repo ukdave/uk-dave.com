@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <article>
+    {{ with .Data.Pages.ByPublishDate.Reverse }}
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        {{ range . }}
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: inherit;">{{ .Title | markdownify }}</h5>
+                <p class="card-text">{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+                <div class="text-end">
+                  <a href="{{ .RelPermalink }}" class="btn btn-outline-primary btn-sm">Read more &gt;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p>Sorry, there's nothing to see here yet.</p>
+    {{ end }}
+  </article>
+{{ end }}

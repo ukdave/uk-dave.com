@@ -3,11 +3,11 @@
     <h1>{{ .Title }}</h1>
   </header>
   <article>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
       {{ range .Params.photos }}
-        <div class="col mb-4">
-          <div class="embed-responsive embed-responsive-3by2">
-            <a class="embed-responsive-item" data-flickr-embed="true" href="{{ .link }}" title="{{ .title }}" data-branding="false" data-sharing="false">
+        <div class="col">
+          <div class="ratio ratio-3x2">
+            <a data-flickr-embed="true" href="{{ .link }}" title="{{ .title }}" data-branding="false" data-sharing="false">
               <img class="gallery-item anim-fade-in-scale-up" loading="lazy" src="{{ .src }}" alt="{{ .title }}">
             </a>
           </div>

@@ -1,19 +1,29 @@
 // Configuration of Bootstrap's baseline
-// https://github.com/twbs/bootstrap/blob/v4.6.0/scss/_variables.scss
+// https://github.com/twbs/bootstrap/blob/v5.0.1/scss/_variables.scss
+
+$enable-negative-margins:           true;
+
+$min-contrast-ratio:                0;
 
 $body-bg:                           $gray-800;
 $body-color:                        $gray-300;
 
-$font-family-sans-serif:            "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif:            "Raleway", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $headings-font-family:              "Indie Flower", cursive;
+
+$link-decoration:                   none;
 
 $text-muted:                        $gray-500;
 
 $code-color:                        $indigo;
 $pre-color:                         $gray-400;
 
-$table-bg-level:                    -3;
-$table-border-level:                0;
+$small-font-size:                   80%;
+
+$input-color:                       $gray-700;
+$input-disabled-bg:                 $gray-400;
+
+$table-bg-scale:                    -25%;
 
 $pagination-color:                  $gray-400;
 $pagination-bg:                     $gray-700;
@@ -27,16 +37,19 @@ $pagination-disabled-color:         $gray-600;
 $pagination-disabled-bg:            $gray-700;
 $pagination-disabled-border-color:  $gray-600;
 
-$jumbotron-bg:                      $gray-700;
-
 $card-bg:                           $gray-700;
 
-$alert-bg-level:                    0;
-$alert-border-level:                0;
-$alert-color-level:                 -10;
+$breadcrumb-padding-y:              .75rem;
+$breadcrumb-padding-x:              1rem;
+$breadcrumb-border-radius:          .25rem;
+
+$alert-bg-scale:                    0%;
+$alert-border-scale:                0%;
+$alert-color-scale:                 -80%;
 
 $progress-bg:                       $gray-700;
 
+$list-group-color:                  $gray-300;
 $list-group-bg:                     $gray-700;
 $list-group-hover-bg:               $gray-600;
 $list-group-disabled-color:         $gray-600;
@@ -46,6 +59,31 @@ $breadcrumb-bg:                     $gray-700;
 $breadcrumb-divider-color:          $gray-500;
 $breadcrumb-active-color:           $gray-400;
 
-$embed-responsive-aspect-ratios: (
-  (3 2),
+$modal-content-color:               $gray-300;
+$modal-content-bg:                  $gray-700;
+$modal-header-border-color:         rgba($black, .125);
+
+$toast-color:                       $gray-300;
+$toast-background-color:            $gray-700;
+$toast-header-color:                $gray-300;
+$toast-header-background-color:     $gray-700;
+
+$nav-tabs-border-color:             $gray-500;
+$nav-tabs-link-hover-border-color:  $gray-400 $gray-400 $nav-tabs-border-color;
+$nav-tabs-link-active-border-color: $gray-500 $gray-500 $body-bg;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "3x2": calc(2 / 3 * 100%),
 );
