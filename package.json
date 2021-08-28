@@ -1,21 +1,22 @@
 {
- "comments": {
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {
+      "@fullhuman/postcss-purgecss": "theme-ukdave",
+      "autoprefixer": "theme-ukdave",
+      "bootstrap": "theme-ukdave",
+      "postcss": "theme-ukdave",
+      "postcss-cli": "theme-ukdave"
+    }
+  },
   "dependencies": {},
   "devDependencies": {
-   "@fullhuman/postcss-purgecss": "theme-ukdave",
-   "autoprefixer": "theme-ukdave",
-   "bootstrap": "theme-ukdave",
-   "postcss": "theme-ukdave",
-   "postcss-cli": "theme-ukdave"
-  }
- },
- "devDependencies": {
-  "@fullhuman/postcss-purgecss": "^4.0.3",
-  "autoprefixer": "^10.2.6",
-  "bootstrap": "^5.1.0",
-  "postcss": "^8.3.5",
-  "postcss-cli": "^8.3.1"
- },
- "name": "uk-dave.com",
- "version": "0.2.1"
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.3.3",
+    "bootstrap": "^5.1.0",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1"
+  },
+  "name": "uk-dave.com",
+  "version": "0.2.2"
 }
