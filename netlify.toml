@@ -4,6 +4,7 @@ command = "hugo --gc --minify -d public"
 
 
 [context.production.environment]
+NODE_VERSION = "16.17.0"
 HUGO_VERSION = "0.102.3"
 HUGO_ENV = "production"
 
@@ -12,6 +13,7 @@ HUGO_ENV = "production"
 command = "hugo --gc --minify -d public --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
+NODE_VERSION = "16.17.0"
 HUGO_VERSION = "0.102.3"
 
 
@@ -19,4 +21,5 @@ HUGO_VERSION = "0.102.3"
 command = "hugo --gc --minify -d public -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
+NODE_VERSION = "16.17.0"
 HUGO_VERSION = "0.102.3"
