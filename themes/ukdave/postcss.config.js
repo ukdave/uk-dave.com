@@ -4,6 +4,9 @@ module.exports = {
   plugins: [
     purgecss({
       content: ["./hugo_stats.json"],
+      safelist: {
+        deep: [/chroma/]
+      },
       options: {
         defaultExtractor: (content) => {
           let els = JSON.parse(content).htmlElements;

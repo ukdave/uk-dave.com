@@ -16,8 +16,8 @@ googleAnalytics = "G-N7WYC3EZLL"
   guessSyntax = true
   noClasses = false
 
-[build]
-  writeStats = true
+[build.buildStats]
+  enable = true
 
 [params]
   author = "David Bull"
