@@ -11,12 +11,12 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^5.0.0",
-    "autoprefixer": "^10.4.16",
-    "bootstrap": "~5.2.1",
-    "postcss": "^8.4.31",
-    "postcss-cli": "^10.1.0"
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "autoprefixer": "^10.4.21",
+    "bootstrap": "~5.2.3",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
   },
   "name": "uk-dave.com",
-  "version": "0.2.5"
+  "version": "0.2.6"
 }
