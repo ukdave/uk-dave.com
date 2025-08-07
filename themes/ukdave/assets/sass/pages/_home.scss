@@ -4,11 +4,11 @@
   h2 { font-size: $h5-font-size; }
 
   .drop-shadow {
-    filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
   }
 
   .social-link {
-    color: $body-color;
+    color: var(--bs-body-color);
     flex: 0 0 4rem;
     font-size: 1.5rem;
     line-height: 3rem;
@@ -16,8 +16,16 @@
     transition: all .25s ease;
 
     &:hover {
-      color: $body-color;
+      color: var(--bs-body-color);
       font-size: 2rem;
+    }
+  }
+}
+
+[data-bs-theme="dark"] {
+  .page-home {
+    .drop-shadow {
+      filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
     }
   }
 }

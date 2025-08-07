@@ -1,10 +1,18 @@
 .navbar {
   background-color: $body-bg;
-  border-bottom: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  box-shadow: 0 0 1rem #00000026,inset 0 -1px #ffffff26;
 
   .container-fluid {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+[data-bs-theme="dark"] {
+  .navbar {
+    background-color: $body-bg-dark;
+    border-bottom: 1px solid rgba(255,255,255,.1);
   }
 }
 

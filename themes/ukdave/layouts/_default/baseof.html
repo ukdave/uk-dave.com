@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+<html lang="{{ .Site.LanguageCode | default "en" }}" data-bs-theme="{{ .Site.Params.theme | default "dark" }}">
   {{ partial "site-head.html" . }}
   <body>
-    <header class="navbar navbar-expand navbar-dark fixed-top-sm">
+    <header class="navbar navbar-expand fixed-top-sm">
       <div class="container-fluid flex-column flex-sm-row">
         <a href="{{ "/" | relURL }}" class="navbar-brand mr-sm-auto">
           {{ .Site.Title }}
@@ -18,7 +18,7 @@
       </div>
     </header>
 
-    <main class="container">
+    <main class="container mb-3">
       {{ block "main" . }}{{ end }}
     </main>
   </body>

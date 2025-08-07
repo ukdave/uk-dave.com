@@ -5,7 +5,7 @@ module.exports = {
     purgecss.default({
       content: ["./hugo_stats.json"],
       safelist: {
-        deep: [/chroma/]
+        deep: [/chroma/, /data-bs-theme/]
       },
       defaultExtractor: (content) => {
         let els = JSON.parse(content).htmlElements;

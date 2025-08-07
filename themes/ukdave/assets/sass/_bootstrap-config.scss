@@ -1,76 +1,67 @@
 // Configuration of Bootstrap's baseline
-// https://github.com/twbs/bootstrap/blob/v5.0.1/scss/_variables.scss
+// https://github.com/twbs/bootstrap/blob/v5.3.7/scss/_variables.scss
 
 $enable-negative-margins:           true;
 
 $min-contrast-ratio:                0;
 
-$body-bg:                           $gray-800;
-$body-color:                        $gray-300;
+$body-bg:                           $white;
+$body-bg-dark:                      $gray-800;
+$body-secondary-bg-dark:            $gray-700;
+$body-tertiary-bg-dark:             $gray-600;
+
+$body-color:                        $gray-700;
+$body-color-dark:                   $gray-300;
 
 $font-family-sans-serif:            "Raleway", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $headings-font-family:              "Indie Flower", cursive;
 
+$link-color:                        #0d6efd; // bootstrap blue-500
+$link-color-dark:                   $primary;
 $link-decoration:                   none;
 
-$text-muted:                        $gray-500;
+$border-color-dark:                 $gray-600;
 
-$code-color:                        $indigo;
-$pre-color:                         $gray-400;
+$code-color:                        #4f46e5; // tailwind indigo-500
+$code-color-dark:                   $indigo;
+
+$pre-color:                         $gray-500;
+$pre-color-dark:                    $gray-400;
 
 $small-font-size:                   80%;
 
-$input-color:                       $gray-700;
-$input-disabled-bg:                 $gray-400;
-
+$table-color:                       var(--bs-body-color);
 $table-bg-scale:                    -25%;
 
-$pagination-color:                  $gray-400;
-$pagination-bg:                     $gray-700;
-$pagination-border-color:           $gray-600;
+$pagination-color:                  var(--bs-secondary-color);
+$pagination-bg:                     var(--bs-secondary-bg);
 
-$pagination-hover-color:            $gray-200;
-$pagination-hover-bg:               $gray-600;
-$pagination-hover-border-color:     $gray-600;
+$pagination-hover-color:            var(--bs-body-color);
+$pagination-hover-bg:               var(--bs-tertiary-bg);
 
-$pagination-disabled-color:         $gray-600;
-$pagination-disabled-bg:            $gray-700;
-$pagination-disabled-border-color:  $gray-600;
+$pagination-disabled-color:         var(--bs-tertiary-color);
+$pagination-disabled-bg:            var(--bs-secondary-bg);
 
-$card-bg:                           $gray-700;
-
-$breadcrumb-padding-y:              .75rem;
-$breadcrumb-padding-x:              1rem;
-$breadcrumb-border-radius:          .25rem;
+$card-bg:                           var(--bs-secondary-bg);
 
 $alert-bg-scale:                    0%;
 $alert-border-scale:                0%;
 $alert-color-scale:                 -80%;
 
-$progress-bg:                       $gray-700;
+$list-group-bg:                     var(--bs-secondary-bg);
+$list-group-disabled-color:         var(--bs-tertiary-color);
 
-$list-group-color:                  $gray-300;
-$list-group-bg:                     $gray-700;
-$list-group-hover-bg:               $gray-600;
-$list-group-disabled-color:         $gray-600;
-$list-group-action-color:           $gray-300;
+$breadcrumb-padding-y:              .75rem;
+$breadcrumb-padding-x:              1rem;
+$breadcrumb-bg:                     var(--bs-secondary-bg);
+$breadcrumb-divider-color:          var(--bs-tertiary-color);
+$breadcrumb-border-radius:          .25rem;
 
-$breadcrumb-bg:                     $gray-700;
-$breadcrumb-divider-color:          $gray-500;
-$breadcrumb-active-color:           $gray-400;
+$modal-content-bg:                  var(--bs-secondary-bg);
 
-$modal-content-color:               $gray-300;
-$modal-content-bg:                  $gray-700;
-$modal-header-border-color:         rgba($black, .125);
-
-$toast-color:                       $gray-300;
-$toast-background-color:            $gray-700;
-$toast-header-color:                $gray-300;
-$toast-header-background-color:     $gray-700;
-
-$nav-tabs-border-color:             $gray-500;
-$nav-tabs-link-hover-border-color:  $gray-400 $gray-400 $nav-tabs-border-color;
-$nav-tabs-link-active-border-color: $gray-500 $gray-500 $body-bg;
+$toast-background-color:            var(--bs-secondary-bg);
+$toast-header-color:                var(--bs-body-color);
+$toast-header-background-color:     var(--bs-secondary-bg);
 
 $grid-breakpoints: (
   xs: 0,

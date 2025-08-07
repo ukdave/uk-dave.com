@@ -21,6 +21,7 @@ googleAnalytics = "G-N7WYC3EZLL"
 
 [params]
   author = "David Bull"
+  theme = "dark"
   favicon = "/img/favicon.ico"
   logo = "/img/weemee-head-only_200x200.png"
   strapline = "Software Developer, Amateur Photographer, Geek"
