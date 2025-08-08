@@ -5,7 +5,7 @@ command = "hugo --gc --minify -d public"
 
 [context.production.environment]
 NODE_VERSION = "22.18.0"
-HUGO_VERSION = "0.120.4"
+HUGO_VERSION = "0.148.2"
 HUGO_ENV = "production"
 
 
@@ -14,7 +14,7 @@ command = "hugo --gc --minify -d public --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
 NODE_VERSION = "22.18.0"
-HUGO_VERSION = "0.120.4"
+HUGO_VERSION = "0.148.2"
 
 
 [context.branch-deploy]
@@ -22,4 +22,4 @@ command = "hugo --gc --minify -d public -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
 NODE_VERSION = "22.18.0"
-HUGO_VERSION = "0.120.4"
+HUGO_VERSION = "0.148.2"

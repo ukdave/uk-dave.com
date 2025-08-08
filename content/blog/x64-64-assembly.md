@@ -1,6 +1,7 @@
 ---
 title: "x86-64 Assembly"
 date: 2023-11-15T21:00:00+00:00
+description: An x86-64 assembly cheat-sheet
 ---
 
 # Introduction
@@ -11,6 +12,7 @@ original 8086 instruction set from 1978.
 This post is intended as a sort of cheat-sheet, assembled while working through the
 [x86-64 Assembly](https://exercism.org/tracks/x86-64-assembly) track on [Exercism](https://exercism.org).
 
+<!--more-->
 
 # Registers
 
