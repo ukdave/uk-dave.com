@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/dd3b24fa-dab3-4900-98e6-5cbd7b0a1185/deploy-status)](https://app.netlify.com/sites/uk-dave-com/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dd3b24fa-dab3-4900-98e6-5cbd7b0a1185/deploy-status)](https://app.netlify.com/projects/uk-dave-com/deploys)
 
 # My Personal Website
 
@@ -8,7 +8,10 @@ Check it out at [uk-dave.com](https://www.uk-dave.com).
 
 ```bash
 # Install hugo and node
-brew install hugo nodejs
+brew install asdf
+asdf plugin add hugo
+asdf plugin add nodejs
+asdf install
 
 # Install dependencies (bootstrap, postcss, etc)
 hugo mod npm pack
