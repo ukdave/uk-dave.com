@@ -2,7 +2,7 @@ const purgecss = require("@fullhuman/postcss-purgecss");
 
 module.exports = {
   plugins: [
-    purgecss.default({
+    purgecss({
       content: ["./hugo_stats.json"],
       safelist: {
         deep: [/chroma/, /data-bs-theme/]
