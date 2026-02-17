@@ -15,23 +15,29 @@ external APIs, remote services, or file system calls.
     <div class="col-xxl-7 col-xl-8 col-lg-10 mb-3">
       <div class="card">
         <div class="card-body">
-          <form>
-            <input type="reset" class="btn btn-primary float-end">
-            <div class="input-group mb-3">
-              <label class="input-group-text" style="width: 8em;">Base Interval</label>
-              <input class="form-control" name="baseInterval" type="number" min="0" step="0.25" value="0.5" x-model="baseInterval">
+          <form class="row">
+            <div class="col-sm-6 col-9">
+              <div class="row mb-3">
+                <label class="col col-form-label">Base Interval</label>
+                <input class="col form-control" name="baseInterval" type="number" min="0" step="0.25" value="0.5" x-model="baseInterval">
+              </div>
+              <div class="row mb-3">
+                <label class="col col-form-label">Multiplier</label>
+                <input class="col form-control" name="baseInterval" type="number" min="0" step="0.25" value="1.5" x-model="multiplier">
+              </div>
+              <div class="row mb-3">
+                <label class="col col-form-label">Rand Factor</label>
+                <input class="col form-control" name="baseInterval" type="number" min="0" step="0.25" value="0.5" x-model="randFactor">
+              </div>
+              <div class="row mb-3">
+                <label class="col col-form-label">Tries</label>
+                <input class="col form-control" name="baseInterval" type="number" min="1" value="10" x-model="tries">
+              </div>
             </div>
-            <div class="input-group mb-3">
-              <label class="input-group-text" style="width: 8em;">Multiplier</label>
-              <input class="form-control" name="baseInterval" type="number" min="0" step="0.25" value="1.5" x-model="multiplier">
-            </div>
-            <div class="input-group mb-3">
-              <label class="input-group-text" style="width: 8em;">Rand Factor</label>
-              <input class="form-control" name="baseInterval" type="number" min="0" step="0.25" value="0.5" x-model="randFactor">
-            </div>
-            <div class="input-group mb-3">
-              <label class="input-group-text" style="width: 8em;">Tries</label>
-              <input class="form-control" name="baseInterval" type="number" min="1" value="10" x-model="tries">
+            <div class="col-sm-6 col-3">
+              <div class="d-flex justify-content-end">
+                <input type="reset" class="btn btn-primary">
+              </div>
             </div>
           </form>
 <div id="code">
