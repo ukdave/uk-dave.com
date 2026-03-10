@@ -1,6 +1,6 @@
 ---
 title: Semantic Release Gem
-date: 2025-02-10
+date: 2025-02-10T21:00:00+00:00
 description: "Ruby gem that makes semantic versioning and releases painless by bumping version numbers, updating changelogs, tagging git and more."
 tags:
   - ruby

@@ -1,6 +1,6 @@
 ---
 title: JWT Decoder
-date: 2026-02-17T21:00:00+01:00
+date: 2026-02-17T21:00:00+00:00
 description: A decoder for JSON Web Tokens (JWT).
 ---
 

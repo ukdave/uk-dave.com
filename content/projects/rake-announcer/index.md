@@ -1,6 +1,6 @@
 ---
 title: Rake Announcer Gem
-date: 2025-02-12
+date: 2025-02-12T21:00:00+00:00
 description: "Small Ruby gem that prints friendly, colourful announcements before selected Rake tasks and provides a celebratory 'All Tests Passed' message."
 tags:
   - ruby
