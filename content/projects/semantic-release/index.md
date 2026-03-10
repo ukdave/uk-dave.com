@@ -12,11 +12,13 @@ Rather than manually editing `lib/version.rb`, updating `CHANGELOG.md`, and reme
 
 It was inspired by projects such as [SemVer2](https://github.com/haf/semver), [Rake‑n‑Bake](https://github.com/RichardVickerstaff/rake-n-bake) and [Version Manager](https://github.com/tpbowden/version_manager), which appear to be unmaintained. It has no runtime dependencies and is intended to be dropped straight into your own gem or app.
 
-{{< figure
-  src="https://github.com/ukdave/semantic_release/raw/main/screenshot.png?raw=true"
-  alt="Screenshot of SemanticRelease in action"
-  caption="Screenshot of SemanticRelease in action"
->}}
+{{< center-block >}}
+  {{< figure
+    src="https://github.com/ukdave/semantic_release/raw/main/screenshot.png?raw=true"
+    alt="Screenshot of SemanticRelease in action"
+    caption="Screenshot of SemanticRelease in action"
+  >}}
+{{< /center-block >}}
 
 # Installation and usage
 

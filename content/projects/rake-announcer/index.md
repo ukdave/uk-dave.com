@@ -10,11 +10,13 @@ tags:
 
 It was inspired by the [Rake-n-Bake](https://github.com/RichardVickerstaff/rake-n-bake) gem which is a collection of widely applicable Rake tasks, but hasn't been maintained since 2019. Most of the Rake tasks I use (rubocop, rspec, etc) include their own Rake tasks, so I don't have much use for those provided by Rake-n-Bake, but I did like its `log_step` method and `ok_rainbow` task.
 
-{{< figure
-  src="https://github.com/ukdave/rake_announcer/raw/main/screenshot.png?raw=true"
-  alt="Screenshot of RakeAnnouncer in action"
-  caption="Screenshot of RakeAnnouncer in action"
->}}
+{{< center-block >}}
+  {{< figure
+    src="https://github.com/ukdave/rake_announcer/raw/main/screenshot.png?raw=true"
+    alt="Screenshot of RakeAnnouncer in action"
+    caption="Screenshot of RakeAnnouncer in action"
+  >}}
+{{< /center-block >}}
 
 # Installation and usage
 
