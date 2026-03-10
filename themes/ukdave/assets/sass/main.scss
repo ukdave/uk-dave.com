@@ -21,4 +21,11 @@
 
 .card-title {
   font-family: inherit;
+  font-weight: inherit;
+}
+
+.figure-caption h4 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: $font-weight-bold;
 }
